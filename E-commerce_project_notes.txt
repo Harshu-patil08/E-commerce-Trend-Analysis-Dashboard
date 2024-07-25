@@ -1,0 +1,45 @@
+Sample Questions:
+- Relation Between age and gender based on number of orders?
+- Which month got the highest sales and orders?
+- Compare the sales and orders using single chart?
+- Who purchased more men or women in 2024?
+- What are different order status in 2024?
+- List top 10 states contributing to the sales?
+- Which channel is contributing to maximum sales?
+- Highest selling category?
+
+#Objective:-
+E-commerce trend wants to create an annual Sales report for 2024. So that, E-commerce Can understand their customers and grow more sales in 2025.
+
+1. DATA CLEANING:-
+first check all the data is it right or not, by applying filter on dataset and important think is that, the value should not be null or duplicate.
+Eg. in gender column their should be men and women but here some of records of men are represented as M and same with women as W, so we will change this by replacing M as men and W as Women.
+
+2. DATA PROCESSING:-
+Data processing means if we want to calculate or process data for analyzing.
+
+Q. Relation Between age and gender based on number of orders?
+-- we have to create new column and column name is Age_Group
+by applying formula 
+=IF(E2>=65,"Old",IF(E2>=30,"Adults","Genz"))
+
+Q. Which month got the highest sales and orders?
+-- we have to create new column and column name is Month by applying formula
+=TEXT(G2,"mmm")
+
+3. DATA ANALYSIS:- 
+1st we have to create pivot table.
+
+Q.Compare the sales and orders using single chart?
+-- drag amount and paste it in values similarly drag order and paste it in rows.
+
+Insights :-
+
+- Women are more likely to buy compared to men(~65%)
+- Maharashtra, Karnataka and Uttar Pradesh are the top 3 States(~35%)
+- Adult age group(2-49 yrs) is max contributing(~50%)
+- Amazon, Flipkart and Myntra channels are max contributing (~80%)
+
+Final conclusion to improve E-commerce Sales:-
+--Target Women Customers of age group(30-49 yrs) living in Maharashtra, Karnataka and Uttar Pradesh by showing ads/offers/coupons available on Amazon, Flipkart and Myntra.
+
